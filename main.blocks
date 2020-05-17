@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="2U`ku9u^|DufRbDB~sc:">mySprite</variable><variable id="1m.H(p@~0f4Ukk=z0Uop">Hoop</variable><variable type="KIND_SpriteKind" id="JZ#HvX+~!ew5A%bkf$3@">Player</variable><variable type="KIND_SpriteKind" id="0CfNX;{8OWuD]1#3t{_Q">Projectile</variable><variable type="KIND_SpriteKind" id="R:{++8t%(LX8sT:yr(3]">Food</variable><variable type="KIND_SpriteKind" id="M$pOtYZ~lg]cy#T*Gz^U">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="2U`ku9u^|DufRbDB~sc:">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . 7 7 7 7 7 7 . . . . . 
+. . . . 7 7 . . 7 . 7 7 . . . . 
+. . . . 7 . . . . . . 7 . . . . 
+. . . . 7 . . . . . . 7 . . . . 
+. . . . 7 7 7 . . 7 7 . . . . . 
+. . . . . . 7 7 7 . . . . . . . 
+. . . . . . . 7 . . . . . . . . 
+. . . . . 7 7 7 7 . . . . . . . 
+. . . . . . . 7 . 7 7 7 7 . . . 
+. . . . . . 7 . . . . . . . . . 
+. . . . . . 7 . . . . . . . . . 
+. . . . . . 7 . . . . . . . . . 
+. . . . . . 7 . . . . . . . . . 
+. . . . 7 7 . 7 7 . . . . . . . 
+. 7 7 7 . . . . 7 7 . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="2U`ku9u^|DufRbDB~sc:">mySprite</field></block></value><value name="vx"><shadow type="math_number"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number"><field name="NUM">100</field></shadow></value><next><block type="spritesetsetflag"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get"><field name="VAR" id="2U`ku9u^|DufRbDB~sc:">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="2U`ku9u^|DufRbDB~sc:">mySprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">80</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">110</field></shadow></value><next><block type="variables_set"><field name="VAR" id="1m.H(p@~0f4Ukk=z0Uop">Hoop</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . 2 2 . . . . . . . . . 
+. . . . . 2 2 2 2 2 2 . . . . . 
+. . . . 2 2 . . . . . 2 2 . . . 
+. . . 2 2 . . . . . . . 2 . . . 
+. . . 2 . . . . . . . . . 2 . . 
+. . . 2 . . . . . . . . . 2 . . 
+. . . 2 . . . . . . . . . 2 . . 
+. . . . 2 . . . . . . . . 2 . . 
+. . . . 2 . . . . . . . 2 . . . 
+. . . . . 2 2 . . 2 2 2 2 . . . 
+. . . . . . . 2 2 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetsetflag"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get"><field name="VAR" id="2U`ku9u^|DufRbDB~sc:">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="1m.H(p@~0f4Ukk=z0Uop">Hoop</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">80</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">10</field></shadow></value><next><block type="Sprite_blockCombine_change"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="1m.H(p@~0f4Ukk=z0Uop">Hoop</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">50</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
